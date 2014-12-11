@@ -4,14 +4,35 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 
 public class LoginActivity extends Activity {
+
+    Button mSubmitButton;
+    EditText mUsernameInput;
+    EditText mPasswordInput;
+    EditText mConfirmInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        mSubmitButton = (Button)findViewById(R.id.submit_button);
+        mUsernameInput = (EditText)findViewById(R.id.username_input);
+        mPasswordInput = (EditText)findViewById(R.id.password_input);
+        mConfirmInput = (EditText)findViewById(R.id.confirmation_input);
+
+        mSubmitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
     }
 
 
