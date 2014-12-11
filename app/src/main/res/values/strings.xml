@@ -13,5 +13,6 @@
     <string name="confirmation_label">Confirm Password:</string>
     <string name="confirmation_hint">Please confirm your password</string>
     <string name="submit">Submit</string>
+    <string name="title_activity_home">HomeActivity</string>
 
 </resources>

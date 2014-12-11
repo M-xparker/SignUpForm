@@ -1,6 +1,7 @@
 package io.bitfountain.matthewparker.signupform;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -38,6 +39,9 @@ public class LoginActivity extends Activity {
 
                 if (password.equals(confirmation)){
                     User newUser = new User(username, password);
+
+                    Intent i = new Intent(LoginActivity.this, HomeActivity.class);
+                    startActivity(i);
                 }
 
             }
