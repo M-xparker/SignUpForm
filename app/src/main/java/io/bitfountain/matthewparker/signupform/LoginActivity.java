@@ -37,7 +37,7 @@ public class LoginActivity extends Activity {
                 String confirmation = mConfirmInput.getText().toString();
 
                 if (password.equals(confirmation)){
-                    Log.d(TAG, "Password Success!!!");
+                    User newUser = new User(username, password);
                 }
 
             }
