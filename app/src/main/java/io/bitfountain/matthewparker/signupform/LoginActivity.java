@@ -41,7 +41,7 @@ public class LoginActivity extends Activity {
                     User newUser = new User(username, password);
 
                     Intent i = new Intent(LoginActivity.this, HomeActivity.class);
-                    i.putExtra(HomeActivity.EXTRA, "Hello Android Course");
+                    i.putExtra(HomeActivity.EXTRA, newUser);
                     startActivity(i);
                 }
 

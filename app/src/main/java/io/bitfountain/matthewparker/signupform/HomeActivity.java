@@ -17,8 +17,8 @@ public class HomeActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        String info = getIntent().getStringExtra(EXTRA);
-        Log.d(TAG, info);
+        User user = (User)getIntent().getSerializableExtra(EXTRA);
+        Log.d(TAG, "Username is "+user.getUsername());
     }
 
 
